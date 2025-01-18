@@ -4,8 +4,8 @@ export const Header = () => {
 	return (
 		<header className='header'>
 			<nav className='header__nav'>
-				<NavLink to='/'>Все котики</NavLink>
-				<NavLink to='/favorites'>Любимые котики</NavLink>
+				<NavLink to='.'>Все котики</NavLink>
+				<NavLink to='favorites'>Любимые котики</NavLink>
 			</nav>
 		</header>
 	)
