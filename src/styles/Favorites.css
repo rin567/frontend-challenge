@@ -1,0 +1,10 @@
+.favorites {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+	height: calc(100vh - 64px);
+}
+.favorites__empty {
+	margin-top: 160px;
+}

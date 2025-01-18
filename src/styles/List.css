@@ -1,0 +1,19 @@
+.list {
+	display: grid;
+	width: 1317px;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 48px;
+	margin-top: 112px;
+}
+@media screen and (max-width: 1400px) and (min-width: 840px) {
+	.list {
+		width: 771px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (max-width: 840px) and (min-width: 300px) {
+	.list {
+		width: 225px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

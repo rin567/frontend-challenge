@@ -1,0 +1,35 @@
+.header {
+	background-color: var(--color-accent);
+	height: 64px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	padding: 0 62px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+.header__nav {
+	display: flex;
+}
+
+.header__nav a {
+	color: #ffffff;
+	height: 64px;
+	padding: 23px;
+	opacity: 70%;
+}
+.header__nav a:hover {
+	opacity: 100%;
+}
+.header__nav a.active {
+	background-color: var(--color-accent-shadow);
+	opacity: 100%;
+}
+@media screen and (max-width: 450px) and (min-width: 300px) {
+	.header {
+		padding: 0;
+		justify-content: center;
+	}
+}

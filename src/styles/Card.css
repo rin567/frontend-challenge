@@ -1,0 +1,67 @@
+.card {
+	display: grid;
+	height: 225px;
+	width: 225px;
+	transition: transform 0.2s;
+}
+.card .heart {
+	opacity: 0%;
+}
+.card .heartFull {
+	opacity: 0%;
+}
+.card:hover {
+	box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3), -1px 0 5px rgba(0, 0, 0, 0.3);
+	transform: scale(1.1);
+}
+.card:hover .heart {
+	opacity: 100%;
+}
+.card:hover .heartFull {
+	opacity: 100%;
+}
+.heart {
+	z-index: 1;
+	background-image: url('../assets/heart.svg');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	border: none;
+	grid-area: 1/1;
+	justify-self: end;
+	align-self: end;
+	margin: 19px 15px;
+	transition: transform 0.2s;
+}
+.heart:hover {
+	background-image: url('../assets/heart-full.svg');
+}
+.heart:active {
+	background-image: url('../assets/heart-full.svg');
+	transform: scale(1.2);
+}
+
+.heartFull {
+	background-image: url('../assets/heart-full.svg');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	border: none;
+	grid-area: 1/1;
+	justify-self: end;
+	align-self: end;
+	margin: 19px 15px;
+	transition: transform 0.2s;
+	z-index: 1;
+}
+.heartFull:active {
+	background-image: url('../assets/heart-full.svg');
+	transform: scale(1.2);
+}
+.imgCat {
+	grid-area: 1/1;
+}
